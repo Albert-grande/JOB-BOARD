@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="baseNav.css">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <img src="download (41).jpeg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <img src="download (40).jpeg" class="user-pic" onclick="toggleMenu()">
+            <div class="menu-wrap" id="menuWrap">
+                <div class="menu">
+                    <div class="user-info">
+                        <img src="download (40).jpeg">
+                        <h3>Albert Grande</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="menu-link">
+                        <img src="pencil.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <img src="earth.png" alt="">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <img src="call.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="menu-link">
+                        <img src="single.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+        let menuWrap = document.getElementById("menuWrap");
+
+        function toggleMenu() {
+            console.log("User pic clicked"); // Debugging statement
+            menuWrap.classList.toggle("open-menu");
+            console.log("Menu class list:", menuWrap.classList); // Debugging statement
+        }
+    </script>
+</body>
+</html>
